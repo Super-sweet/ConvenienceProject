@@ -15,6 +15,7 @@
 		0233BA312148AC2D009F5BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0233BA302148AC2D009F5BDD /* main.m */; };
 		0233BA3B2148AC2E009F5BDD /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0233BA3A2148AC2E009F5BDD /* ProjectTests.m */; };
 		0233BA462148AC2E009F5BDD /* ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0233BA452148AC2E009F5BDD /* ProjectUITests.m */; };
+		0233BA582148B2D0009F5BDD /* UIViewController+SupAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0233BA572148B2D0009F5BDD /* UIViewController+SupAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0233BA412148AC2E009F5BDD /* ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0233BA452148AC2E009F5BDD /* ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectUITests.m; sourceTree = "<group>"; };
 		0233BA472148AC2E009F5BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0233BA562148B2D0009F5BDD /* UIViewController+SupAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SupAlertController.h"; sourceTree = "<group>"; };
+		0233BA572148B2D0009F5BDD /* UIViewController+SupAlertController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SupAlertController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		0233BA202148AC2C009F5BDD /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				0233BA542148AFE1009F5BDD /* Foundation */,
+				0233BA532148AFD8009F5BDD /* UIKit */,
 				0233BA212148AC2C009F5BDD /* AppDelegate.h */,
 				0233BA222148AC2C009F5BDD /* AppDelegate.m */,
 				0233BA242148AC2C009F5BDD /* ViewController.h */,
@@ -130,6 +135,30 @@
 				0233BA472148AC2E009F5BDD /* Info.plist */,
 			);
 			path = ProjectUITests;
+			sourceTree = "<group>";
+		};
+		0233BA532148AFD8009F5BDD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0233BA542148AFE1009F5BDD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0233BA552148B049009F5BDD /* Super */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0233BA552148B049009F5BDD /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				0233BA562148B2D0009F5BDD /* UIViewController+SupAlertController.h */,
+				0233BA572148B2D0009F5BDD /* UIViewController+SupAlertController.m */,
+			);
+			path = Super;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0233BA582148B2D0009F5BDD /* UIViewController+SupAlertController.m in Sources */,
 				0233BA262148AC2C009F5BDD /* ViewController.m in Sources */,
 				0233BA312148AC2D009F5BDD /* main.m in Sources */,
 				0233BA232148AC2C009F5BDD /* AppDelegate.m in Sources */,
